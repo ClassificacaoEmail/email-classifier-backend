@@ -2,7 +2,7 @@
 
 Sistema de classificação automática de emails para setor financeiro usando Python/Flask e processamento de linguagem natural (NLP).
 
-##  Visão Geral do Projeto
+##  Visão Geral
 
 Este backend foi desenvolvido para automatizar a classificação de emails em **Produtivo** (requer ação) ou **Improdutivo** (informativo), otimizado especificamente para empresas do setor financeiro que lidam com alto volume de emails diários.
 
