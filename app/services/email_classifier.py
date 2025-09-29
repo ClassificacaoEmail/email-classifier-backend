@@ -200,7 +200,7 @@ def get_suggestions(classification: str) -> List[str]:
             "Vou encaminhar para nossa equipe financeira e manter você informado sobre o progresso.",
             "Caso seja urgente, entre em contato com nossa central de atendimento: 0800-XXX-XXXX"
         ]
-    else:  # Improdutivo
+    else: 
         return [
             "Obrigado pela mensagem!",
             "Recebido, muito obrigado pelo contato.",
@@ -210,24 +210,18 @@ def get_suggestions(classification: str) -> List[str]:
         ]
 
 def test_classifier():
-    """Testes específicos para contexto financeiro"""
     test_cases = [
-        # Casos PRODUTIVOS financeiros
         "Meu cartão de crédito foi bloqueado e preciso desbloquear urgente para uma compra importante",
         "Não consigo fazer transferência PIX, aparece erro no aplicativo. Preciso de ajuda!",
         "Gostaria de solicitar um empréstimo pessoal. Qual a documentação necessária?",
         "Não reconheço uma compra de R$ 500,00 no meu cartão. Pode ser fraude?",
         "Preciso do extrato detalhado da minha conta para declaração do imposto de renda",
         
-        # Casos IMPRODUTIVOS financeiros
         "Parabéns pela nova campanha publicitária do banco, ficou muito criativa!",
         "Obrigado pelo convite para o webinar sobre investimentos, mas não poderei participar",
         "Recebi o comunicado sobre a manutenção programada do sistema para este final de semana",
         "Feliz ano novo! Desejo muito sucesso para toda equipe em 2024!"
     ]
-    
-    print("🏦 TESTE DO CLASSIFICADOR FINANCEIRO:")
-    print("=" * 60)
     
     for i, text in enumerate(test_cases, 1):
         result = classify_email(text)
